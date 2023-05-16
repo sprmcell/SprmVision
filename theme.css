@@ -117,3 +117,28 @@
   --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
   --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
+
+/* Make member list fade in upon hover */
+/* thanks to SourrR34#0437 from the ClearVision discord server */
+
+.container-2o3qEW .members-3WRCEx{
+    transition: width .5s ease-in-out;
+}
+.container-2o3qEW:not(:hover) .members-3WRCEx{
+    width: 68px;
+}
+.container-2o3qEW:hover .members-3WRCEx{
+    width: var(--members-width);
+}
+.container-2o3qEW:not(:hover) .members-3WRCEx .membersGroup-2eiWxl{
+    visibility: hidden;
+}
+
+/* rotating pfp upon hover */
+
+.avatar-2e8lTP:hover.clickable-31pE3P:hover {
+  filter: drop-shadow(0 0 8px);
+  color: #ff0000;
+  transform: scale(1.2) rotate(360deg); 
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+}
