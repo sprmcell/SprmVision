@@ -142,3 +142,15 @@
   transform: scale(1.2) rotate(360deg); 
   transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
 }
+
+/* makes the send button red */
+
+.channelTextArea-1VQBuV .button-y6hemj .button-2fCJ0o .buttonChild-33lB5F{
+  color: #ff0000;
+}
+
+/* remove the gift box */
+
+button[aria-label="Send a gift"] {
+    display: none;
+}
